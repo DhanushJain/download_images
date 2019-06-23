@@ -1,0 +1,27 @@
+I have imported required libraries for the above code.
+ 
+User agent request contains a string to allow network protocol peer, helps to surf on that web and for web scrapping.
+
+In function get_soup(), I have used beautifulsoup to web scrap the given url and get its headers and its html parser. 
+
+In function qur_url(), it appends the query to the google search link of https in the code to search it.
+
+In function soup_img(), it is for extracting the image from the beaultifulsoup which was extracted from the function get_soup().
+And to get raw images from the net we have a function imgs(), from the url in request header.
+
+In function save_image(), from the imgs() we get raw image and image type and dir to save the image after dowmloading.
+
+In function download_images_to_dir (), it will download all the images from the path we have provided and the images are saved in save_dir with file_name which is done by the library “os”.
+
+We have used open a function which is of type wb and then write with raw images.
+
+If any error occur  we have written a exception so that error will be taken care.
+
+And then finally function run(), which will require 3 parameters, the query , save dir and the number of images to be saved. 
+In which the query is anything which we want to search.
+
+To get better output for the user input we have used argparse to run on commend prom,
+and here the inputs are what the user want to search and then the number if images to be downloaded and also the directory in which the images to be stored, 
+args will contain all the inputs from the user and then will be passed through the run function.
+
+At last we use main function to run the whole function and to run the main.
